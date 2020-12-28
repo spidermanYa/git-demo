@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="./js/jquery-3.5.1.min.js"></script>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <script src="./js/bootstrap.js"></script>
+  <script src="./js/animate.js"></script>
+  <script src="./js/index.js"></script>
+
+</head>
+
+<body>
+  <!-- header -->
+  <header class="index-header">
+    <div class="inner">
+      <div class="index-header-logo">
+        <ul>
+          <li><img src="./images/t_f89a5d34706e1cf3.png" alt="">
+            <ul>
+              <li><a href="#">简体中文</a><i class="sanjiao"></i></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="index-header-middle">
+        <ul>
+          <li><a href="index.html" class="index-header-active">首页</a></li>
+          <li><a href="about us.html">关于我们</a>
+            <ul>
+              <li><a href="#base-situation">基地概况</a></li>
+              <li><a href="#enviroment-show">环境展示</a></li>
+              <li><a href="#one-garden">一核四园</a></li>
+              <li><a href="#service-platform">服务平台</a></li>
+            </ul>
+          </li>
+          <li><a href="double service.html">双创服务</a>
+            <ul>
+              <li><a href="#site-service">场地服务</a></li>
+              <li><a href="#declaration-service ds-inner">申报服务</a></li>
+              <li><a href="#technical-service site-service">技术服务</a></li>
+              <li><a href="#incubation-service">孵化服务</a></li>
+              <li><a href="#talent-service">人才服务</a></li>
+            </ul>
+          </li>
+          <li><a href="policy service.html">政策服务</a>
+            <ul>
+              <li><a href="#">非公职称申报</a></li>
+
+            </ul>
+          </li>
+          <li><a href="information publish.html">资讯发布</a>
+            <ul>
+              <li><a href="#base-inquire">基地资讯</a></li>
+              <li><a href="#activity-News">活动新闻</a></li>
+              <li><a href="#public-notice">公示公告</a></li>
+
+            </ul>
+          </li>
+          <div class="index-header-middle-login">
+            <input type="text" placeholder="全站搜索">
+            <i></i>
+            <h3>
+              <span data-toggle="modal" data-target="#exampleModal">
+                登录
+              </span>/<span>注册</span>
+              <!-- Button trigger modal -->
+
+
+            </h3>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="modal-title" id="exampleModalLabel">
+            <h5>登录</h5>
+            <p>欢迎来到天津（滨海）海外人才离岸创新创业基地</p>
+          </span>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <input type="email" placeholder="邮箱" name="" id="">
+          <input type="password" placeholder="密码" name="" id="">
+          <div><a href="#">忘记密码？</a><a href="#">我要注册</a></div>
+          <input type="submit" value="登录" name="" id="">
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- 轮播图 -->
+  <div class="banner">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./images/f1764c5e2278f10d.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/a4275498196d7128.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/516c7db6f154a5c1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/e2f2c005cfd3cc1c.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">
+          <</span> </a> <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+            data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true">
+
+            </span>
+            <span class="sr-only">></span>
+      </a>
+    </div>
+  </div>
+  <section>
+    <!-- 基地介绍 -->
+    <div class="base-area">
+      <div class="inner">
+        <div class="base-area-intro">
+          <h3 class="h3-title">BASE INTRODUCTION</h3>
+          <h4 class="h4-title">基地介绍</h4>
+          <p class="p-title">引进海外人才、前沿技术，通过离岸模式支持成果转化，让人才或机构享受跨境贸易、投资、 技术转让、人才合作的便捷、高效和自由。</p>
+          <button>点击查看基地360度全景</button>
+        </div>
+        <div class="base-area-img">
+          <img src="./images/5fbec432c3669270.jpg" alt="">
+          <img src="./images/e463a320af25dec4.jpg" alt="">
+          <img src="./images/c6304911281da6a3.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <!-- 新创业开始 -->
+    <div class="syb-area">
+      <div class="inner">
+        <div class="syb-area-intro base-area-intro">
+          <h3 class="h3-title h3-title-syb">INNOVATION AND ENTREPRENEURSHIP</h3>
+          <h4 class="h4-title">创新创业</h4>
+        </div>
+        <div class="syb-area-img ">
+          <figure>
+            <img src="./images/t_7fe7b71d0a004b37.png" alt="">
+            <h3>更低廉的成本</h3>
+            <p>
+              信息、商机、资源共享升级
+              业务、资本、人才对接升级
+              创新资源价值最大化
+            </p>
+          </figure>
+          <figure>
+            <img src="./images/t_37e7449e263bae45.png" alt="">
+            <h3>更低廉的成本</h3>
+            <p>
+              信息、商机、资源共享升级
+              业务、资本、人才对接升级
+              创新资源价值最大化
+            </p>
+          </figure>
+          <figure>
+            <img src="./images/t_63f47afc5fb819f2.png" alt="">
+            <h3>更低廉的成本</h3>
+            <p>
+              信息、商机、资源共享升级
+              业务、资本、人才对接升级
+              创新资源价值最大化
+            </p>
+          </figure>
+        </div>
+      </div>
+    </div>
+    <!-- 全球站点 -->
+    <div class="globle-area">
+      <div class="inner">
+        <div class="globle-area-intro base-area-intro">
+          <h3 class="h3-title h3-title-syb">OVERSEAS SITE</h3>
+          <h4 class="h4-title">海外站点</h4>
+        </div>
+        <div class="globle-area-img">
+          <div class="canver">
+            <img src="./images/globle-stop.fw.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 数字跑马开始-->
+    <div class="digtal">
+      <div class="digtal-inner">
+        <figure>
+          <img src="./images/t_a2875c850de37a1f.png" alt="">
+          <p>重点科技项目</p>
+          <h3><span>100</span>+</h3>
+        </figure>
+        <figure>
+          <img src="./images/t_18f490ea29fad740.png" alt="">
+          <p>海外高层次人才</p>
+          <h3><span>100</span>+</h3>
+        </figure>
+        <figure>
+          <img src="./images/t_ba8afef5e75ee3b7.png" alt="">
+          <p>高新技术成果</p>
+          <h3><span>100</span>+</h3>
+        </figure>
+      </div>
+    </div>
+    <!-- 基地咨询 -->
+    <div class="base-inquire">
+      <div class="inner">
+        <div class="base-inquire-intro base-area-intro">
+          <h3 class="h3-title">BASE INFORMATION</h3>
+          <h4 class="h4-title">基地资讯</h4>
+        </div>
+        <div class="base-inquire-img">
+          <div class="base-inquire-img-left">
+            <img src="./images/t_e05b143c3bd92835.png" alt="">
+            <p>连茂君调研“十四五”规划人才和创新创业工作</p>
+          </div>
+          <div class="base-inquire-img-right">
+            <a href="#">
+              <p class="p1">连茂君调研“十四五”规划人才和创新创业工作</p>
+              <p class="alerm"><i></i> 2020-12-09</p>
+              <p class="p3">市委常委、滨海新区区委书记连茂君深入经开区、滨海高新区，实地调研“十四五”规划人才和创新创业工作。</p>
+            </a>
+            <hr>
+            <div class="survey">
+              <div class="survey-left">
+                <p> 中国科协领导莅临离岸基地考察调研</p>
+                <p>2020第六届中欧生命科学论坛 交流·创新·合作·共赢</p>
+                <p>天津（滨海）海外人才离岸创新创业基地第3次联席会议成功举行</p>
+                <p>非公职称申报 请来离岸基地！！！</p>
+              </div>
+              <div class="survey-right">
+                <p class="alerm"><i></i> 2020-12-09</p>
+                <p class="alerm"><i></i> 2020-12-09</p>
+                <p class="alerm"><i></i> 2020-12-09</p>
+                <p class="alerm"><i></i> 2020-12-09</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a id="toDetailinfor" href="http://www.opeb.cn/channels/421.html">&nbsp;</a>
+      </div>
+    </div>
+    <!-- 活动新闻 -->
+    <div class="activity-News">
+      <div class="inner">
+        <div class="activity-News-intro base-area-intro">
+          <h3 class="h3-title">EVENT NEWS</h3>
+          <h4 class="h4-title">活动新闻</h4>
+        </div>
+        <div class="activity-News-img">
+          <div class="activity-News-img-item">
+            <div class="item-img">
+              <img src="./images/t_6325771be49dba4f.jpg" alt="">
+            </div>
+            <p class="p-date">2020-12-11</p>
+            <span>第六届中欧生命科学论坛项目对接会成功举行</span>
+            <p class="num-th-text">第六届中欧生命科学论坛项目对接会在滨海-中关村成功举行。</p>
+            <div>
+              <span class="baseline"></span>
+              <span class="detail">查看详情</span>
+            </div>
+          </div>
+          <div class="activity-News-img-item">
+            <div class="item-img">
+              <img src="./images/b7f81c1f8d9f2783.jpg" alt="">
+            </div>
+            <p class="p-date">2020-11-23</p>
+            <span>第六届中欧生命科学论坛在津举行</span>
+            <p class="num-th-text">第六届中欧生命科学论坛于11月19日在津举行</p>
+            <div>
+              <span class="baseline"></span>
+              <span class="detail">查看详情</span>
+            </div>
+          </div>
+          <div class="activity-News-img-item">
+            <div class="item-img">
+              <img src="./images/ceab98a75f2c58bd.jpg" alt="">
+            </div>
+            <p class="p-date">2020-09-30</p>
+            <span>第二届海外人才离岸双创发展论坛暨“海河英才”海外人才创业大赛获奖项目对接会成功举行</span>
+            <p class="num-th-text">9月29日，第二届海外人才离岸双创发展论坛暨“海河英才”海外人才创业大赛获奖项目对接会在滨海-中关村科技园成功举行。</p>
+            <div>
+              <span class="baseline"></span>
+              <span class="detail">查看详情</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 成果展示 -->
+    <div class="achievement-show">
+      <div class="inner">
+        <div class="achievement-show-intro base-area-intro">
+          <h3 class="h3-title">ACHIEVEMENT DISPLAY</h3>
+          <h4 class="h4-title">成果展示</h4>
+        </div>
+        <div class="achievement-show-img">
+          <div class="achievement-show-img-item">
+            <img src="./images/31b8a2dd73eabea2.jpg" alt="">
+            <p><span>海外人才</span></p>
+          </div>
+          <div class="achievement-show-img-item">
+            <img src="./images/225a051528c510e4.jpg" alt="">
+            <p><span>创新技术</span></p>
+          </div>
+          <div class="achievement-show-img-item">
+            <img src="./images/e2e0ea38e674180.jpg" alt="">
+            <p><span>品牌企业</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 合作品牌 -->
+    <div class="cooperative-brand">
+      <div class="inner">
+        <div class="cooperative-brand-intro base-area-intro">
+          <h3 class="h3-title">COOPERATION BRAND</h3>
+          <h4 class="h4-title">合作品牌</h4>
+        </div>
+        <!-- 品牌轮播 -->
+        <div class="brand-carousel">
+          <span class="arrow-r"></span>
+          <span class="arrow-l"></span>
+          <ul>
+            <li>
+              <div class="brand-logo">
+                <div class="brand-logo-top">
+                  <a href="#"><img src="./images/logo/china.png" alt="">
+                    <div class="logo-block"></div>
+                  </a>
+                  <a href="#"><img src="./images/logo/yi.png" alt="">
+                    <div class="logo-block"></div>
+                  </a>
+                  <a href="#"><img src="./images/logo/hr.png" alt="">
+                    <div class="logo-block"></div>
+                  </a>
+                  <a href="#"><img src="./images/logo/shebao.png" alt="">
+                    <div class="logo-block"></div>
+                  </a>
+                  <a href="#"><img src="./images/logo/otc.png" alt="">
+                    <div class="logo-block"></div>
+                  </a>
+                </div>
+              </div>
+              <div class="brand-logo">
+                <a href="#"><img src="./images/logo/laintong.png" alt="">
+                  <div class="logo-block"></div>
+                </a>
+                <a href="#"><img src="./images/logo/zed.png" alt="">
+                  <div class="logo-block"></div>
+                </a>
+                <a href="#"><img src="./images/logo/zhongguokexie.png" alt="">
+                  <div class="logo-block"></div>
+                </a>
+                <a href="#"><img src="./images/logo/teda.png" alt="">
+                  <div class="logo-block"></div>
+                </a>
+              </div>
+              <div class="brand-logo">
+                <div class=" brand-logo-bottom">
+                  <a href="#"><img src="./images/logo/landi.png" alt="">
+                    <div class="logo-block"></div>
+                  </a>
+                  <a href="#"><img src="./images/logo/zhong.png" alt="">
+                    <div class="logo-block"></div>
+                  </a>
+                  <a href="#"><img src="./images/logo/ming.png" alt="">
+                    <div class="logo-block"></div>
+                  </a>
+                  <a href="#"><img src="./images/logo/58.png" alt="">
+                    <div class="logo-block"></div>
+                  </a>
+                  <a href="#"><img src="./images/logo/af.png" alt="">
+                    <div class="logo-block"></div>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="brand-logo">
+                <div class="brand-logo-top">
+                  <a href="#"><img src="./images/logo/china.png" alt=""></a>
+                  <a href="#"><img src="./images/logo/bhvc.png" alt=""></a>
+                  <a href="#"><img src="./images/logo/c.png" alt=""></a>
+                  <a href="#"><img src="./images/logo/chuang.png" alt=""></a>
+                  <a href="#"><img src="./images/logo/otc.png" alt=""></a>
+                </div>
+              </div>
+              <div class="brand-logo">
+                <a href="#"><img src="./images/logo/china.png" alt=""></a>
+                <a href="#"><img src="./images/logo/yi.png" alt=""></a>
+                <a href="#"><img src="./images/logo/hr.png" alt=""></a>
+                <a href="#"><img src="./images/logo/shebao.png" alt=""></a>
+              </div>
+              <div class="brand-logo">
+                <div class=" brand-logo-bottom">
+                  <a href="#"><img src="./images/logo/china.png" alt=""></a>
+                  <a href="#"><img src="./images/logo/yi.png" alt=""></a>
+                  <a href="#"><img src="./images/logo/hr.png" alt=""></a>
+                  <a href="#"><img src="./images/logo/shebao.png" alt=""></a>
+                  <a href="#"><img src="./images/logo/otc.png" alt=""></a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ol class="circle">
+            <!-- <li></li>
+              <li></li>
+              <li class="current"></li>
+              <li></li> -->
+
+
+          </ol>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- footer -->
+  <footer class="foot">
+    <div class="inner">
+      <div class="foot-left">
+        <img src="./images/t_d07858654792be85.png" alt="">
+        <p>天津（滨海）海外人才离岸创新创业基地</p>
+        <p>固话：+86-22-25231239 +86-22-25230519</p>
+        <p>地址：天津滨海-中关村科技园华塘睿城一区3号楼写字楼</p>
+      </div>
+      <div class="foot-middle">
+        <ul>
+          <li><a href="#">关于我们</a></li>
+          <li><a href="#">基地概况</a></li>
+          <li><a href="#">环境展示</a></li>
+          <li><a href="#">一核四园</a></li>
+          <li><a href="#">服务平台</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">双创服务</a></li>
+          <li><a href="#">场地服务</a></li>
+          <li><a href="#">申报服务</a></li>
+          <li><a href="#">技术服务</a></li>
+          <li><a href="#">孵化服务</a></li>
+          <li><a href="#">人才服务</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">人才服务</a></li>
+          <li><a href="#">非公职称申报</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">资讯发布</a></li>
+          <li><a href="#">基地资讯</a></li>
+          <li><a href="#">活动新闻</a></li>
+          <li><a href="#">公示公告</a></li>
+        </ul>
+      </div>
+      <div class="foot-right">
+        <span>
+          <img src="./images/t_32b596a652d7942c.png" alt="">
+          <p> 微博公众号 </p>
+        </span>
+        <span>
+          <img src="./images/t_b1793aa9eb4e0dd1.jpg" alt="">
+          <p> 微信公众号 </p>
+        </span>
+      </div>
+    </div>
+    <div class="foot-beian">
+      <a href="#">津ICP备19003855号 &nbsp</a>
+      <a href="#">津公安网安备12011602000514号</a>
+    </div>
+  </footer>
+</body>
+
+<script>
+  $(".carousel").carousel({
+    interval: 2000,
+  });
+  var num = 0;
+  num++;
+  console.log(num);
+  // var innerWidth = (window.innerWidth - 1200) / 2;
+  // console.log(innerWidth);
+  // var LogLeftWidth = document.querySelector('.index-header-logo');
+  // console.log(LogLeftWidth.offsetLeft);
+</script>
+
+
+</html>

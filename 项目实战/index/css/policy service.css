@@ -1,0 +1,236 @@
+.banner {
+  width: 100%;
+  height: 309.14px;
+}
+
+.banner img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.announcement {
+  padding-bottom: 30px;
+}
+
+.announcement-intro button {
+  color: #F08300;
+  border: 1px solid #F08300;
+  background: none;
+  width: 180px;
+  margin-bottom: 40px;
+}
+
+.announcement-img {
+  display: flex;
+}
+
+.announcement-img-left {
+  width: 700px;
+  margin-left: 10px;
+}
+
+.announcement-img-left-top {
+  height: 250px;
+}
+
+.announcement-img-left-top h5 {
+  font-size: 18px;
+  line-height: 70px;
+  font-weight: 600;
+  color: #000;
+}
+
+.announcement-img-left-top p {
+  text-indent: 43px;
+  font-size: 16px;
+  line-height: 30px;
+  color: #000;
+}
+
+.announcement-img-left-center {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 35px;
+}
+
+.announcement-img-left-center span {
+  width: 130px;
+  height: 1px;
+  background-color: #FFA500;
+}
+
+.announcement-img-left-center a {
+  margin-left: 5px;
+  color: #FFA500;
+}
+
+.announcement-img-left-bottom {
+  height: 120px;
+  line-height: 40px;
+  font-size: 20px;
+  padding-left: 50px;
+  padding-top: 20px;
+  color: #fff;
+  background-color: #FFA500;
+}
+
+.announcement-img-right {
+  width: 480px;
+  padding-left: 75px;
+  display: flex;
+  flex-direction: column;
+}
+
+.announcement-img-right h5 {
+  font-size: 18px;
+  line-height: 70px;
+  font-weight: 600;
+  color: #000;
+}
+
+.announcement-img-right a {
+  text-decoration: underline !important;
+  line-height: 43px;
+}
+
+.policy-document {
+  background-color: #F4F4F4;
+}
+
+.policy-document-img .activity-News-img-item {
+  width: 350px;
+  height: 300px;
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: 0 0 6px 3px #ccc;
+  border: none;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(160px, 0);
+  }
+}
+
+.policy-document-img .activity-News-img-item:hover .item-title {
+  color: #fff;
+  background-color: #1D71B7;
+}
+
+.policy-document-img .activity-News-img-item:hover i::before {
+  animation-name: move;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.policy-document-img .activity-News-img-item .item-title {
+  padding: 20px 20px 0 20px;
+  height: 100px;
+  line-height: 30px;
+  color: #000;
+  font-weight: bold;
+  font-size: 18px;
+  background: #e9e9ec;
+  transition: all .5s;
+}
+
+.policy-document-img .activity-News-img-item .p-date {
+  font-size: 14px !important;
+  margin-top: 0 !important;
+  padding-top: 15px;
+}
+
+.policy-document-img .activity-News-img-item .workable {
+  height: 100px;
+  width: 350px;
+  padding: 16px 20px 0;
+  line-height: 28px;
+  font-size: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.policy-document-img .activity-News-img-item span {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0;
+  padding-right: 10px;
+}
+
+.policy-document-img .activity-News-img-item span i {
+  position: relative;
+  display: block;
+  width: 200px;
+  height: 3px;
+  background: #f4f4f4;
+  transition: all 3s;
+  overflow: hidden;
+}
+
+.policy-document-img .activity-News-img-item span i::before {
+  position: absolute;
+  top: 0;
+  left: -160px;
+  content: "";
+  width: 160px;
+  height: 3px;
+  background-color: #1D71B7;
+  transition: all 10s;
+}
+
+.policy-document-img .activity-News-img-item span a {
+  font-size: 16px;
+  font-weight: normal;
+  margin-left: 45px;
+}
+
+.policy-document-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.policy-document-btn button {
+  width: 100px;
+  height: 40px;
+  background-color: #fff;
+  border: 1px solid #F08300;
+  color: #F08300;
+  border-radius: 5px;
+  font-size: 18px;
+  margin: 40px 0 50px;
+}
+
+.imbark-base {
+  height: 220px;
+  background: url(../images/zhengce-bg.fw.png);
+  background-size: 100% 100%;
+  background-color: #F4F4F4;
+}
+
+.imbark-base-contact {
+  padding-top: 20px;
+}
+
+.imbark-base-contact h1 {
+  font-size: 26px;
+  line-height: 80px;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #000;
+}
+
+.imbark-base-contact p {
+  font-size: 24px;
+  line-height: 50px;
+  color: #000;
+}

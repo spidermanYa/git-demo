@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+i{
+    font-style: normal;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 ,
+p{
+    font-weight: normal;
+    margin: 0;
+}
+
+header,
+footer,
+section,
+figure,
+figcaption,
+hgroup,
+artical,
+aside,
+nav {
+    display: block;
+}
+
+input,
+button {
+    outline: none;
+    border: 1px solid #f7f7f7;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    display: block;
+}
+
+.clearfix::after {
+    display: block;
+    height: 0;
+    content: '';
+    visibility: hidden;
+    clear: both;
+}
+
+.hid {
+    display: none;
+}
+/* 
+::-webkit-scrollbar{
+    display: none;
+} */
+
+.flex-around {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.inline-flex {
+    display: inline-flex;
+}
+
+.flex{
+    flex: 1;
+}

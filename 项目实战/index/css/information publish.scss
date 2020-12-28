@@ -1,0 +1,198 @@
+@charset "utf-8";
+$color-white:#fff;
+
+// 混合定义
+@mixin flex-spacebetween {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin h5 {
+    font-size: 18px;
+    line-height: 70px;
+    font-weight: 600;
+    color: #000;
+}
+
+// 轮播图·
+.banner {
+    height: 309.146px !important;
+
+    .carousel {
+        width: 100%;
+        height: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+// 基地咨询
+.base-inquire {
+    &-img {
+        @include flex-center;
+
+        &-left {    
+            padding-right: 30px;
+            cursor: pointer;
+
+            .pane {
+              @include flex-center;
+                align-items: center;
+                margin-top: -1px;
+                width: 518px;
+                height: 113px;
+                border: 1px solid transparent;
+                border-right: 2px solid transparent;
+                &:hover{
+                    border: 1px solid #1D71B7;
+                    border-right: 2px solid #1D71B7;
+                }
+                figure {
+                    text-align: center;
+                    width: 86px;
+                    height: 98px;
+
+                    h1 {
+                        font-size: 44px;
+                        color: #1D71B7;
+                        margin: 8px 0;
+                    }
+
+                    span {
+                        display: block;
+                        width: 100%;
+                        height: 30px;
+                        line-height: 30px;
+                        color: $color-white;
+                        font-size: 14px;
+                        background-color: #1D71B7;
+                    }
+                }
+
+               &-text{
+                    width: 385px;
+                    height: 100px;
+                    margin-left: 20px;
+                    opacity: .8;
+                    h5 {
+                        @include h5;
+                       line-height: 24px;
+                        margin: 16px 0;
+                        /* 1.要文字强制显示一行,除非遇到强制换行<br> */
+                        white-space: nowrap;
+                        /* 2. 超出部分隐藏*/
+                        overflow: hidden;
+                        /* 3.文字用省略号代替 */
+                        text-overflow: ellipsis;
+                    }
+                    p{
+                        font-size: 16px;
+                    }
+                }
+            }
+
+        }
+
+        &-right {
+            width: 540px;
+            height: 340px;
+            overflow: hidden;
+            div{
+                width: 540px;
+                height: 340px;
+                position: relative;
+                img{
+                    width: 540px;
+                    height: 340px;
+                }
+                p{
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    height: 45px;
+                    line-height: 45px;
+                    text-align: center;
+                    background-color: #F08300;
+                    font-size: 18px;
+                    font-weight: bold;
+                    color: white;
+                }
+            }
+        }
+    }
+    &-btn{
+        @include flex-center;
+        button {
+            width: 100px;
+            height: 40px;
+            background-color: #fff;
+            border: 1px solid #F08300;
+            color: #F08300;
+            border-radius: 5px;
+            font-size: 18px;
+          margin: 40px 0 30px; 
+        }
+    }
+}
+// 公示公告
+.public-notice{
+    margin: 30px 38px;
+    .inner{
+        @include flex-spacebetween;
+    }
+    &-left{
+        position: relative;
+        width: 798px;
+        height: 168px;
+        background: url(../images/d28c94b3d6600087.jpg) no-repeat;
+        background-size: 100% 100%;
+        div{
+            @include flex-column;
+            width: 430px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            a{
+                margin-top: 10px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
+        span{
+            position: absolute;
+            right: 15px;
+            bottom: 10px;
+            cursor: pointer;
+            a{
+                font-size: 14px;
+                color: #1D71B7;
+                opacity: 1;
+            }
+        }
+
+    }
+    &-right{
+        width: 375px;
+        height: 168px;
+      img{
+          width: 100%;
+          height: 100%;
+      }
+    }
+}
